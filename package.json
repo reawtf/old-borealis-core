@@ -1,0 +1,41 @@
+{
+  "name": "@borealisswap/borealis-core",
+  "version": "1.0.0",
+  "description": "Core contracts for the Borealis Finance",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorealisSwap/borealis-core.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "solc": "0.5.16",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/BorealisSwap/borealis-core/issues"
+  },
+  "homepage": "https://github.com/BorealisSwap/borealis-core#readme",
+  "scripts": {
+    "test": "mocha"
+  }
+}
