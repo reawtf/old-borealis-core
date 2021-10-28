@@ -1,6 +1,6 @@
 {
   "name": "@borealisswap/borealis-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core contracts for the Borealis Finance",
   "main": "truffle-config.js",
   "directories": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BorealisSwap/borealis-core.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   },
   "engines": {
     "node": ">=10"
@@ -36,6 +39,12 @@
   },
   "homepage": "https://github.com/BorealisSwap/borealis-core#readme",
   "scripts": {
+    "lint": "yarn prettier ./test/*.ts --check",
+    "lint:fix": "yarn prettier ./test/*.ts --write",
+    "clean": "rimraf ./build/",
+    "precompile": "yarn clean",
+    "compile": "waffle .waffle.json",
+    "pretest": "yarn compile",
     "test": "mocha"
   }
 }
