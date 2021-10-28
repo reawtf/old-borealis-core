@@ -1,6 +1,6 @@
 {
   "name": "@borealisswap/borealis-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core contracts for the Borealis Finance",
   "main": "truffle-config.js",
   "directories": {
