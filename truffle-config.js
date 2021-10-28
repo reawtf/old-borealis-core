@@ -57,6 +57,7 @@ module.exports = {
       provider: new HDWalletProvider(mnemonic,'https://mainnet.aurora.dev/'),
       gasPrice: 3000000000, //3 gwei
       production: true,
+      skipDryRun: true,
     },
     // Another network with more advanced options...
     // advanced: {
